@@ -1,0 +1,19 @@
+package node
+
+import (
+"k8s.io/kubectl/pkg/cmd/debug"
+)
+type Client struct {
+}
+
+
+func NewClient() *Client {
+
+	return &DebugNode{}
+}
+
+
+func (c *Client) RunCommand([]string cmd) (string,string,error) {
+
+	return "","",nil
+}
